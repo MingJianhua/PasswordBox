@@ -1,9 +1,9 @@
 //
 //  PassWordInputWindow.m
-//  PassWordProtectDemo
+//  PasswordBox
 //
-//  Created by Jack on 15-1-22.
-//  Copyright (c) 2015年 jack. All rights reserved.
+//  Created by MingJianhua on 2017/2/21.
+//  Copyright © 2017年 MingJianhua. All rights reserved.
 //
 
 #import "PassWordInputWindow.h"
@@ -14,7 +14,6 @@
     UITextField *_textField;
     int _nInputCount;
     int _nNumber[6];
-
 }
 
 +(PassWordInputWindow *)sharedInstance
@@ -95,33 +94,10 @@
                         [btnNumber setTitle:@"删除" forState:UIControlStateNormal];
                     }
                 }
-                
-                
-                //btnNumber.font = [UIFont fontWithName:@"Arial" size:(float)nGridWidth/1.8];
-                //btnNumber.textAlignment = NSTextAlignmentCenter;
-                
                 [self addSubview:btnNumber];
             }
         }
-        /*
-        UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(10, 80, 200, 30)];
-        textField.backgroundColor = [UIColor whiteColor];
-        textField.borderStyle =UITextBorderStyleBezel;
-        textField.secureTextEntry = YES;
-        [self addSubview:textField];
-        
-        UIButton *button = [UIButton new];
-        button.frame = CGRectMake(10, 130, 60, 30);
-        [button setBackgroundColor:[UIColor whiteColor]];
-        [button setTitle:@"确定" forState:UIControlStateNormal];
-        [button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-        
-        [button addTarget:self action:@selector(completeButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:button];
-        //self.backgroundColor = [UIColor grayColor];
-        
-        _textField = textField;
-         */
+
         
     }
     return self;
